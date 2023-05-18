@@ -45,13 +45,15 @@
       android:text="@string/back_to_back"
       style="@style/DialogSectionHeaderText"
       app:layout_constraintTop_toBottomOf="@+id/vehicle_id"
+      app:layout_constraintStart_toStartOf="parent"
       android:layout_marginTop="@dimen/dialog_space_height"/>
   <CheckBox
       android:id="@+id/back_to_back_checkbox"
       android:text="@string/enabled"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      app:layout_constraintTop_toBottomOf="@+id/back_to_back_label"/>
+      app:layout_constraintTop_toBottomOf="@+id/back_to_back_label"
+      app:layout_constraintStart_toStartOf="parent" />
 
   <TextView
       android:id="@+id/supported_trip_types_label"
@@ -60,19 +62,22 @@
       android:text="@string/trip_type_text"
       style="@style/DialogSectionHeaderText"
       app:layout_constraintTop_toBottomOf="@+id/back_to_back_checkbox"
+      app:layout_constraintStart_toStartOf="parent"
       android:layout_marginTop="@dimen/dialog_space_height" />
   <CheckBox
       android:id="@+id/trip_type_exclusive"
       android:text="@string/trip_type_exclusive"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      app:layout_constraintTop_toBottomOf="@+id/supported_trip_types_label"/>
+      app:layout_constraintTop_toBottomOf="@+id/supported_trip_types_label"
+      app:layout_constraintStart_toStartOf="parent" />
   <CheckBox
       android:id="@+id/trip_type_shared"
       android:text="@string/trip_type_shared"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      app:layout_constraintTop_toBottomOf="@+id/trip_type_exclusive"/>
+      app:layout_constraintTop_toBottomOf="@+id/trip_type_exclusive"
+      app:layout_constraintStart_toStartOf="parent" />
 
   <TextView
       android:id="@+id/vehicle_capacity_label"
@@ -81,12 +86,14 @@
       android:text="@string/vehicle_capacity_text"
       style="@style/DialogSectionHeaderText"
       app:layout_constraintTop_toBottomOf="@+id/trip_type_shared"
+      app:layout_constraintStart_toStartOf="parent"
       android:layout_marginTop="@dimen/dialog_space_height"/>
   <Spinner
       android:id="@+id/vehicle_capacity_spinner"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      app:layout_constraintTop_toBottomOf="@+id/vehicle_capacity_label"/>
+      app:layout_constraintTop_toBottomOf="@+id/vehicle_capacity_label"
+      app:layout_constraintStart_toStartOf="parent" />
 
   <TextView
       android:id="@+id/simulate_locations_label"
@@ -95,12 +102,14 @@
       android:text="@string/simulate_locations_text"
       style="@style/DialogSectionHeaderText"
       app:layout_constraintTop_toBottomOf="@+id/vehicle_capacity_spinner"
+      app:layout_constraintStart_toStartOf="parent"
       android:layout_marginTop="@dimen/dialog_space_height"/>
   <CheckBox
       android:id="@+id/simulate_locations_checkbox"
       android:text="@string/enabled"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
-      app:layout_constraintTop_toBottomOf="@+id/simulate_locations_label"/>
+      app:layout_constraintTop_toBottomOf="@+id/simulate_locations_label"
+      app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
